@@ -1,85 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-/* ------------------ Basic formats */
+/* ------------------------- Basic Formats */
 
 body {
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-h3 {
-    font-size: 1.75rem;
-    font-weight: 500;
-}
-
-h5 {
-    font-size: 1.25rem;
-    font-weight: 500;
 }
 
 .uppercase {
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
-/* ------------------ Navigation Bar */
+.container {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* ------------------------- Navigation */
 
 nav ul {
     list-style: none;
     background-color: #4a4a4f;
-    text-align: center;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 nav a {
     text-decoration: none;
-    color: #fff;
-    display: block;
+    color: #fafafa;
 }
 
 nav li {
     font-size: 1.2em;
-    line-height: 35px;
-    height: 35px;
-    display: inline-block;
-    margin-left: 2.5%;
+    padding: 5px 0 5px 0;
 }
 
-nav a:hover {
-    text-decoration: none;
-    background-color: #fff;
-    color: #4a4a4f;
-}
-
-/* ------------------ Opening Page */
+/* ------------------------- Opening Page */
 
 .header {
     font-family: "Roboto", sans-serif;
     color: #fafafa;
-}
-
-.header h1 {
-    margin: 0 0 8px 0;
-}
-
-.header h5 {
-    margin: 0;
-}
- .header p {
-     padding-bottom: 80px;
+    font-size: 300%;
 }
 
 .home {
     height: 100vh;
-    
-    background-color: #525252;
-    /* background: url(1../images/windowclean1.jpg) no-repeat right fixed; */
+
+    /* The background image is not the final version! */
+    background: url(../images/windowclean1.jpg) no-repeat right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -93,40 +68,164 @@ nav a:hover {
     position: relative;
 }
 
-/* ------------------- Contact Me / Form */
+.header-wrap {
+    margin-top: -100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+/* ------------------------- About Me */
+
+.aboutme {
+    background-color: #e8e8e8;
+    padding: 25px;
+}
+
+.aboutme h3 {
+    font-size: 200%;
+    font-weight: 600;
+}
+
+/* ------------------------- F.A.Q.s */
+
+.faqs ul {
+    list-style: none;
+}
+
+.faqs li {
+    padding-bottom: 10px;
+}
+
+.faqs h3 {
+    font-size: 200%;
+    font-weight: 600;
+}
+
+/* ------------------------- Contact Me / Form */
 
 .contact-wrap {
     background-color: #e8e8e8;
 }
 
 .contactme {
-    display: inline-block;
-    width: 25%;
-    padding-left: 80px;
     text-align: center;
-    vertical-align: top;
+    margin: 10px;
+    padding-top: 35px;
 }
 
-.contact-form {
-    display: inline-block;
-    width: 60%;
-    padding-left: 20px;
-    justify-content: center;
+.contactme span {
+    font-weight: bold;
+    background-color: yellow;
 }
 
 .forminput {
+    font-family: "Roboto", sans-serif;
     display: block;
     border: 1px solid lightgray;
     border-radius: 5px;
-    width: 70%;
-    line-height: 20px;
-    font-size: 16px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 40px;
 }
 
-.btn {
-    border: 1px solid lightgray;
-    border-radius: 15px;
-    width: 100px;
-    height: 25px;
-    background-color: yellow;
+.contact-form {
+    margin-top: 50px;
+    font-size: 250%;
+}
+
+
+
+/* ------------------------- @Media Queries */
+
+/* ------------------------- Tablet */
+
+@media (min-width: 768px) {
+
+    /* ------------------ Navigation Bar */
+}
+
+/* ------------------------- Desktop */
+
+@media (min-width: 992px) {
+
+    /* ------------------ Navigation Bar */
+    .navigation {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav li {
+        line-height: 35px;
+        height: 35px;
+        display: inline-block;
+        margin-left: 2.5%;
+        padding: 0;
+    }
+
+    nav a:hover {
+        text-decoration: none;
+        background-color: #fafafa;
+        color: #4a4a4f;
+    }
+
+    /* ------------------- Opening page */
+    .header-wrap {
+        margin-top: -80px;
+        width: 60%;
+        border-radius: 15px;
+    }
+    .header {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    /* --------- Contact Me / Form */
+    .contactme {
+        display: inline-block;
+        width: 25%;
+        padding-left: 80px;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .contact-form {
+        display: inline-block;
+        width: 60%;
+        padding-left: 20px;
+        justify-content: center;
+        font-size: 115%;
+        margin: 25px;
+        margin-bottom: 25px;
+    }
+
+    .forminput {
+        font-family: "Roboto", sans-serif;
+        display: block;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        width: 70%;
+        line-height: 22px;
+        font-size: 16px;
+    }
 }
