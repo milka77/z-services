@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" value="Krisztian Keseru">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-        <title>Z-Services | Your local window cleaner</title>
+        <title>Z Services | Your local window cleaner</title>
     </head>
     
     <body>
@@ -21,11 +22,11 @@
         </nav>
         <!-- ./Navigation Bar -->
         <!-- The opening Page -->
-        <div class="home">
+        <div class="home" id="home">
             <!-- <div class="opaque-overlay">&nbsp;</div> -->
             <div class="header-wrap">
                 <content class="header">
-                    <h1>Z-Services</h1>
+                    <h1>Z Services</h1>
                     <h5>Window cleaning with <span>Purified</span> water</h5>
                     <p>Email: diyzservices@gmail.com | Mobile: 07435 646478</p>
                 </content>
@@ -77,6 +78,12 @@
                     <input class="forminput" type="text" name="name" placeholder="Enter your name" required><br>
                     <label for="email">Email:</label>
                     <input class="forminput" type="email" name="email" placeholder="Enter your email" required><br>
+                    <label for="phone">Phone:</label>
+                    <input class="forminput" type="text" name="phone" placeholder="Enter your phone (optional)"><br>
+                    <label for="housenr">House Number:</label>
+                    <input class="forminput" type="text" name="housenr" placeholder="Enter your house number" required><br>
+                    <label for="postcode">Postcode:</label>
+                    <input class="forminput" type="text" name="postcode" placeholder="Enter your postcode" required><br>
                     <label for="house">House type:</label>
                     <select class="forminput" name="house" required>
                             <option value="null" disabled>Please select an option</option>
@@ -102,7 +109,9 @@
                             <option value="no">No</option>
                             <option value="yes">Yes</option>
                         </select>
-                    <input class="btn" type="submit" name="submit" value="Send!" />
+                    <div class="#">
+                        <input class="btn" type="submit" name="submit" value="Send!"/>
+                    </div>                
                 </form>
             </div>
         </div>
