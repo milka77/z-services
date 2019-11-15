@@ -41,7 +41,7 @@ h5 {
 
 nav ul {
     list-style: none;
-    background-color: #4a4a4f;
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -91,23 +91,37 @@ nav li {
 
 .aboutme {
     background-color: #e8e8e8;
-    padding: 25px;
+    padding: 25px 25px 50px 25px;
 }
 
 /* ------------------------- F.A.Q.s */
 
-.faqs ul {
-    list-style: none;
+.faqs {
+    padding-bottom: 25px;
 }
 
-.faqs li {
-    padding-bottom: 10px;
+.faqs ul {
+    list-style: none;
+    padding: 0 10px 0 10px;
 }
+
+.faqs-question {
+    font-style: italic;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+
+.faqs-answer {
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
 
 /* ------------------------- Contact Me / Form */
 
 .contact-wrap {
     background-color: #e8e8e8;
+    padding-bottom: 15px;
 }
 
 .contactme {
@@ -144,7 +158,45 @@ nav li {
     display: block;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 10px;
+}
+
+/* ------------------------- Footer */
+
+footer {
+    padding: 20px 0 15px 0;
+    margin: 0;
+    background-color: #4a4a4f;
+    color: #fafafa;
+}
+
+.footer-list {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+.footer-list li a i {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.footer-divider {
+    width: 20vw;
+}
+
+footer p {
+    margin-top: 0;
+}
+
+.copyright p {
+    margin: 0;
 }
 
 /* ------------------------- @Media Queries */
@@ -154,6 +206,41 @@ nav li {
 @media (min-width: 768px) {
 
     /* ------------------ Navigation Bar */
+    
+    /* ------------------ Opening Page */
+    
+    .header-wrap {
+        width: 75%;    
+    }
+    
+    /* ------------------ About Me */
+    
+    .aboutme {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+    /* ------------------ F.A.Q.s */
+    
+    .faqs {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    /* ------------------ Contact / Form */
+    
+    form {
+        width: 70%;
+    }
+    
+    .contactme {
+        padding: 0 20% 0 20%;
+        padding-top: 35px;
+    }
+    
+    .contact-form {
+        margin-left: 20%;
+    }
 }
 
 /* ------------------------- Desktop */
@@ -188,6 +275,7 @@ nav li {
     }
 
     /* ------------------- Opening page */
+    
     .header-wrap {
         margin-top: -80px;
         width: 60%;
@@ -199,21 +287,28 @@ nav li {
     }
 
     /* --------- Contact Me / Form */
+    
+    .contact-wrap {
+        padding-left: 10%;    
+    }
+    
     .contactme {
         display: inline-block;
-        width: 25%;
-        padding-left: 80px;
+        width: 25vw;
+        padding-left: 0 0 0 80px;
         text-align: center;
         vertical-align: top;
     }
-
+    
+    .contact-form {
+        margin-left: 20%;
+    }
+    
     .contact-form {
         display: inline-block;
-        width: 60%;
+        width: 50%;
         padding-left: 20px;
-        justify-content: center;
-        font-size: 115%;
-        margin: 25px;
+        margin: 25px 0 25px 25px;
     }
 
     .forminput {
@@ -226,5 +321,13 @@ nav li {
         font-size: 16px;
     }
 
-
+    /* ------------------------ Footer */
+    
+    .footer-list li a i {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 7px;
+        color: #fafafa;
+    }
 }
