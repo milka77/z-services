@@ -27,29 +27,21 @@ h5 {
     text-transform: uppercase;
 }
 
-.container {
-    float: left;
-    width: 100%;
-    margin: 0;
-}
 
 .text-center {
     text-align: center;
-}
-
-.wrapper {
-    
 }
 
 /* ------------------------- Navigation */
 
 nav ul {
     list-style: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 1;
     margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
+    padding: 0 5px 0 5px;
+    text-align: left;
 }
 
 nav a {
@@ -72,7 +64,7 @@ nav li {
     height: 100vh;
 
     /* The background image is not the final version! */
-    background: url(../images/z_pole1.JPG) no-repeat right fixed;
+    background: url(../images/z_pole1.JPG) no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -90,6 +82,18 @@ nav li {
     width: 95%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+}
+
+.first-line {
+    margin-bottom: 0;
+}
+
+.second-line {
+    margin-top: 0;
+}
+
+.header span {
+    font-style: italic;
 }
 
 /* ------------------------- About Me */
@@ -116,6 +120,10 @@ nav li {
     padding-left: 2%;
 }
 
+.faqs-wrap {
+    padding-top: 25px;
+}
+
 .faqs ul {
     list-style: none;
     padding: 0 10px 0 10px;
@@ -138,6 +146,7 @@ nav li {
 .contact-wrap {
     background-color: #e8e8e8;
     padding-bottom: 15px;
+    padding-top: 20px;
 }
 
 .contactme {
@@ -270,9 +279,17 @@ footer p {
         top: 0;
         left: 0;
     }
+    
+    nav ul {
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        text-align: center;
+    }
 
     nav a {
         display: block;
+        padding: 0 5px 0 5px;
+        transition: all 0.3s ease-in-out;
     }
 
     nav li {
@@ -287,6 +304,8 @@ footer p {
         text-decoration: none;
         background-color: #fafafa;
         color: #4a4a4f;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
     }
 
     /* ------------------- Opening page */
@@ -304,13 +323,14 @@ footer p {
     /* --------- Contact Me / Form */
 
     .contact-wrap {
-        padding-left: 10%;    
+        padding-left: 12%;    
     }
     
     .contactme {
         display: inline-block;
         width: 25vw;
-        padding-left: 0 0 0 80px;
+        padding-left: 0;
+        padding-top: 12%;
         text-align: center;
         vertical-align: top;
     }
@@ -344,5 +364,17 @@ footer p {
         font-size: 16px;
         line-height: 7px;
         color: #fafafa;
+    }
+    
+    .btn {
+        margin-left: 20%;
+        transition: all 1s ease-in-out;
+    }
+    
+    .btn:hover {
+        background-color: #d12c34;
+        border: 1px solid #c3d12c;
+        color: #c3d12c;
+        transition: all 1s ease-in-out;
     }
 }
