@@ -109,6 +109,7 @@ nav li {
     text-decoration: none;
     color: #000;
     font-style: italic;
+    font-weight: bold;
 }
 
 /* ------------------------- F.A.Q.s */
@@ -243,8 +244,8 @@ footer p {
     /* ------------------ About Me */
     
     .aboutme {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 11%;
+        margin-right: 11%;
     }
     
     /* ------------------ F.A.Q.s */
@@ -256,6 +257,14 @@ footer p {
     } 
 
     /* ------------------ Contact / Form */
+    
+    .contactme {
+        padding: 35px 12%;    
+    }
+    
+    .contact-wrap {
+        padding-bottom: 25px;
+    }
     
     form {
         width: 70%;
@@ -327,6 +336,7 @@ footer p {
     .contactme {
         display: inline-block;
         width: 25vw;
+        padding-right: 0;
         padding-left: 0;
         padding-top: 12%;
         text-align: center;
@@ -345,7 +355,7 @@ footer p {
         display: block;
         border: 1px solid lightgray;
         border-radius: 5px;
-        width: 70%;
+        width: 90%;
         line-height: 18px;
         font-size: 16px;
     }
