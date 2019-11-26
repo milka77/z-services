@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-/* ------------------------- Basic Formats */
+/* Basic Formats ------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -31,7 +35,7 @@ h5 {
     text-align: center;
 }
 
-/* ------------------------- Navigation */
+/* Navigation ------------------------- */
 
 nav ul {
     list-style: none;
@@ -52,14 +56,14 @@ nav li {
     font-size: 1.2em;
 }
 
-/* ------------------------- Opening Page */
+/* Opening Page ------------------------- */
 
 .header {
     font-family: "Roboto", sans-serif;
     color: #fafafa;
 }
 
-.home {
+.opening {
     height: 100vh;
 
     /* The background image is not the final version! */
@@ -95,7 +99,7 @@ nav li {
     font-style: italic;
 }
 
-/* ------------------------- About Me */
+/* About Me ------------------------- */
 
 .aboutme-wrap {
     background-color: #e8e8e8;
@@ -112,7 +116,7 @@ nav li {
     font-weight: bold;
 }
 
-/* ------------------------- F.A.Q.s */
+/* F.A.Q.s ------------------------- */
 
 .faqs {
     padding-bottom: 25px;
@@ -141,7 +145,7 @@ nav li {
 }
 
 
-/* ------------------------- Contact Me / Form */
+/* Contact Me / Form ------------------------- */
 
 .contact-wrap {
     background-color: #e8e8e8;
@@ -188,9 +192,9 @@ nav li {
     margin-top: 10px;
 }
 
-/* ------------------------- Footer */
+/* Footer ------------------------- */
 
-footer {
+.footer-wrap {
     padding: 20px 0 15px 0;
     margin: 0;
     background-color: #4a4a4f;
@@ -216,10 +220,12 @@ footer {
 }
 
 .footer-divider {
+    border-bottom: 1px solid #fafafa;
     width: 20vw;
+    margin: 0 auto 5px auto;
 }
 
-footer p {
+.footer-wrap p {
     margin-top: 0;
 }
 
