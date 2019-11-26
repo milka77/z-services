@@ -3,7 +3,7 @@
 /* Basic Formats ------------------------- */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -161,7 +161,7 @@ nav li {
 
 .contactme span {
     font-weight: bold;
-    background-color: yellow;
+    background-color: #FFFF00;
 }
 
 .forminput {
@@ -233,28 +233,28 @@ nav li {
     margin: 0;
 }
 
-/* ------------------------- @Media Queries */
+/* @Media Queries ------------------------- */
 
-/* ------------------------- Tablet */
+/* Tablet ------------------------- */
 
 @media (min-width: 768px) {
 
-    /* ------------------ Navigation Bar */
+    /* Navigation Bar ------------------ */
     
-    /* ------------------ Opening Page */
+    /* Opening Page ------------------ */
     
     .header-wrap {
         width: 75%;    
     }
     
-    /* ------------------ About Me */
+    /* About Me ------------------ */
     
     .aboutme {
         margin-left: 11%;
         margin-right: 11%;
     }
     
-    /* ------------------ F.A.Q.s */
+    /* F.A.Q.s ------------------ */
     
     .faqs {
        width: 80%;
@@ -262,7 +262,7 @@ nav li {
        margin-right: 10%;
     } 
 
-    /* ------------------ Contact / Form */
+    /* Contact / Form ------------------ */
     
     .contactme {
         padding: 35px 12%;    
@@ -279,11 +279,11 @@ nav li {
     
 }
 
-/* ------------------------- Desktop */
+/* Desktop ------------------------- */
 
 @media (min-width: 992px) {
 
-    /* ------------------ Navigation Bar */
+    /* Navigation Bar ------------------ */
     
     .navigation {
         position: fixed;
@@ -321,7 +321,7 @@ nav li {
         transition: all 0.3s ease-in-out;
     }
 
-    /* ------------------- Opening page */
+    /* Opening page ------------------- */
     
     .header-wrap {
         margin-top: -80px;
@@ -333,7 +333,7 @@ nav li {
         display: inline-block;
     }
 
-    /* --------- Contact Me / Form */
+    /* Contact Me / Form --------- */
 
     .contact-wrap {
         padding-left: 12%;    
@@ -370,7 +370,7 @@ nav li {
         margin: 0;
     }
 
-    /* ------------------------ Footer */
+    /* Footer ------------------------ */
     
     .footer-list li a i {
         width: 30px;
@@ -378,6 +378,10 @@ nav li {
         font-size: 16px;
         line-height: 7px;
         color: #fafafa;
+    }
+    
+    .footer-list li a i:hover {
+        color: #d1d1d1;
     }
     
     .btn {
