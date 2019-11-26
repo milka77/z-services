@@ -35,6 +35,10 @@ h5 {
     text-align: center;
 }
 
+.italic {
+    font-style: italic;
+}
+
 /* Navigation ------------------------- */
 
 nav ul {
@@ -87,16 +91,16 @@ nav li {
     border-radius: 25px;
 }
 
+.big-letter {
+    font-size: 200%;
+}
+
 .first-line {
     margin-bottom: 0;
 }
 
 .second-line {
     margin-top: 0;
-}
-
-.header span {
-    font-style: italic;
 }
 
 /* About Me ------------------------- */
@@ -113,7 +117,7 @@ nav li {
     text-decoration: none;
     color: #000;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* F.A.Q.s ------------------------- */
@@ -160,12 +164,11 @@ nav li {
 }
 
 .contactme span {
-    font-weight: bold;
+    font-weight: 600;
     background-color: #FFFF00;
 }
 
 .forminput {
-    font-family: "Roboto", sans-serif;
     display: block;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -186,7 +189,7 @@ nav li {
     background-color: #4a4a4f;
     color: #fff;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     display: block;
     margin: auto;
     margin-top: 10px;
