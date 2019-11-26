@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" value="Krisztian Keseru">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <meta name="author" content="Krisztian Keseru">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
         <title>Z Services | Your local window cleaner</title>
     </head>
     
@@ -22,16 +22,15 @@
         </nav>
         <!-- ./Navigation Bar -->
         <!-- The opening Page -->
-        <div class="home" id="home">
-            <!-- <div class="opaque-overlay">&nbsp;</div> -->
+        <div class="opening" id="home">
             <div class="header-wrap">
-                <content class="header">
+                <section class="header">
                     <h1>Z Services</h1>
                     <h5 class="first-line">Window cleaning with <span class="italic">Purified water</span></h5>
                     <h5 class="second-line">Wigan and surrounding areas</h5>
                     <p>Email: diyzservices@gmail.com | </p>
                     <p>Mobile: 07435 646478</p>
-                </content>
+                </section>
             </div>
         </div>
         <!-- ./ The Opening page -->
@@ -85,19 +84,19 @@
                 </p>
             </div>
             <div class="contact-form">
-                <form id="form" method="POST" action="https://formdump.codeinstitute.net">
+                <form id="form" method="POST" action="#">
                     <label for="name">Name:</label>
-                    <input class="forminput" type="text" name="name" placeholder="Enter your name" required><br>
+                    <input class="forminput" type="text" name="name" id="name" placeholder="Enter your name" required><br>
                     <label for="email">Email:</label>
-                    <input class="forminput" type="email" name="email" placeholder="Enter your email" required><br>
+                    <input class="forminput" type="email" name="email" id="email" placeholder="Enter your email" required><br>
                     <label for="phone">Phone:</label>
-                    <input class="forminput" type="text" name="phone" placeholder="Enter your phone (optional)"><br>
+                    <input class="forminput" type="text" name="phone" id="phone" placeholder="Enter your phone (optional)"><br>
                     <label for="housenr">House Number:</label>
-                    <input class="forminput" type="text" name="housenr" placeholder="Enter your house number" required><br>
+                    <input class="forminput" type="text" name="housenr" id="housenr" placeholder="Enter your house number" required><br>
                     <label for="postcode">Postcode:</label>
-                    <input class="forminput" type="text" name="postcode" placeholder="Enter your postcode" required><br>
+                    <input class="forminput" type="text" name="postcode" id="postcode" placeholder="Enter your postcode" required><br>
                     <label for="house">House type:</label>
-                    <select class="forminput" name="house" required>
+                    <select class="forminput" name="house" id="house" required>
                             <option value="null" disabled>Please select an option</option>
                             <option value="detached">Detached</option>
                             <option value="semi-detached">Semi-detached</option>
@@ -105,9 +104,9 @@
                             <option value="end-of-terraced">End of terrace</option>
                             <option value="bungalow">Bungalow</option>
                             <option value="other">Other</option>
-                        </select><br>
+                    </select><br>
                     <label for="bedroom">Number of bedrooms:</label>
-                    <select class="forminput" name="bedroom" required>
+                    <select class="forminput" name="bedroom" id="bedroom" required>
                             <option value="null" disabled>Please select an option</option>
                             <option value="one">1 bedroom</option>
                             <option value="two">2 bedroom</option>
@@ -116,37 +115,35 @@
                             <option value="five+">5+ bedroom</option>
                         </select><br>
                     <label for="conservatory">Conservatory:</label>
-                    <select class="forminput" name="conservatory" required>    
+                    <select class="forminput" name="conservatory" id="conservatory" required>    
                             <option value="null" disabled>Please select an option</option>
                             <option value="no">No</option>
                             <option value="yes">Yes</option>
                         </select>
                     
-                        <input class="btn" type="submit" name="submit" value="Send!"/>
+                        <input class="btn" type="submit" name="submit" value="Send!">
                                    
                 </form>
             </div>
         </div>
         <!-- ./Contact and Form -->
         <!-- Footer -->
-        <footer>
-            <div class="footer-wrap text-center">
-                <div class="footer">
-                    <p>Get in touch with me at Social Media:</p>
-                    <ul class="footer-list">
-                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>|</li>
-                        <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>|</li>
-                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>|</li>
-                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>|</li>
-                        <li><a href="mailto:diyzservices@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <hr class="footer-divider">
-                    <p><small>&copy; Z Services LTD 2019</small></p>
-                </div>
+        <div class="footer-wrap text-center">
+            <div class="footer">
+                <p>Get in touch with me at Social Media:</p>
+                <ul class="footer-list">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>|</li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>|</li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>|</li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>|</li>
+                    <li><a href="mailto:diyzservices@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="copyright">
+                <div class="footer-divider"></div>
+                <p><small>&copy; Z Services LTD 2019</small></p>
+            </div>
+        </div>
         <!-- ./Footer -->
     </body>
 </html>
