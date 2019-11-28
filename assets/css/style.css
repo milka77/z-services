@@ -41,14 +41,72 @@ h5 {
 
 /* Navigation ------------------------- */
 
+input[type=checkbox] {
+    display: none;    
+}
+
+.logo {
+    display: none;
+}
+
+.bar {
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #e0e0e0;
+}
+
+.bar.middle {
+    top: 13px;
+}
+
+.bar.bottom {
+    top: 22px;
+}
+
+.icon-menu {
+    position: absolute;
+    top: 28px;
+    left: 4px;
+    right: 0
+    margin: auto;
+    color: #fff;
+    display: block;
+}
+
+.menu-btn {
+    position: fixed;
+    display: block;
+    top: 5px;
+    left: 5px;
+    width: 47px;
+    height: 45px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 3px;
+}
+
+input[type=checkbox]:checked ~ nav ul {
+    display: block;
+}
+
+
 nav ul {
     list-style: none;
-    background-color: rgba(0,0,0,0.5);
-    position: fixed;
+    background-color: rgba(0,0,0,0.9);
     z-index: 1;
+    position: fixed;
     margin: 0;
-    padding: 0 5px 0 5px;
-    text-align: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 100vw;
+    display: none;
 }
 
 nav a {
@@ -58,6 +116,7 @@ nav a {
 
 nav li {
     font-size: 1.2em;
+    padding-bottom: 5px;
 }
 
 /* Opening Page ------------------------- */
@@ -288,6 +347,11 @@ nav li {
 
     /* Navigation Bar ------------------ */
     
+    
+    .menu-btn {
+        display: none;
+    }
+    
     .navigation {
         position: fixed;
         z-index: 1;
@@ -297,20 +361,22 @@ nav li {
     }
     
     nav ul {
-        background-color: rgba(0,0,0,0.5);
+        display: inline;
+        background-color: rgba(0,0,0,0.9);
         width: 100%;
         text-align: center;
     }
 
     nav a {
+        font-size: 115%;
         display: block;
-        padding: 0 5px 0 5px;
+        padding: 0 15px 0 15px;
         transition: all 0.3s ease-in-out;
     }
 
     nav li {
         line-height: 35px;
-        height: 35px;
+        height: 38px;
         display: inline-block;
         margin-left: 3.5%;
         padding: 0;
