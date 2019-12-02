@@ -1,20 +1,20 @@
 # Z Services 
 Milestone Project #1: User-Centric Frontend Development - Code Institute
 
-Z Services is a small businnes who cleaning windows with purified water in Wigan and surrounding areas. 
+Z Services is a small business who cleaning windows with purified water in Wigan and surrounding areas. 
 You can find the live demo of the site [here:](https://milka77.github.io/z-services/ "Z Services Homepage")
 
 
 ## UX
 
 I want to create a clean design for the site focused on the basic information about the company and their service.
-For the collapsable mobile navigation menu I've used only CSS to create a mobile version of the navigation. I got the hint “checkbox” from my mentor Ali, I get the inspiration from these sites:: [inspiration 1](http://jsfiddle.net/5FzRL/4/) and [inspiration 2](https://codepen.io/42EG4M1/pen/ByvGPa).  I reviewed those two code snippets and created my own code and menu. 
+For the collapsible mobile navigation menu, I've used only CSS to create a mobile version of the navigation. I got the hint “checkbox” from my mentor Ali, I get the inspiration from these sites:: [inspiration 1](http://jsfiddle.net/5FzRL/4/) and [inspiration 2](https://codepen.io/42EG4M1/pen/ByvGPa).  I reviewed those two code snippets and created my own code and menu. 
 
 ### User Stories
-* At the **opening page** on **_Destop computers_** users should be able to see the navigation bar at the top of the page in fixed position. When users hovering over the navigation the links should change the background color and text color to clearly see which menu they want to activate. 
-At the **_Mobile version_** they should see the menu button fixed on the top left corner. While they press this button the navigation menu will expand to the top of the page. By pressing it again the navigation will be closing. 
-* **Navigation bar** on large screens, when users hovering over the navigation the links should change the background color and text color to clearly see which menu they want to activate. By pressing any of the navigation features the site jumps to the selected section with a smooth scrolling effect by using the code `scroll-behavior: smooth;`.
-* At **About me** section users should see a brief introduction and info from the company. 
+* At the **opening page** on **_Desktop computers,_** users should be able to see the navigation bar at the top of the page in a fixed position. When users hovering over the navigation the links should change the background colour and text colour to clearly see which menu they want to activate. 
+At the **_Mobile version_,** they should see the menu button fixed on the top left corner. While they press this button the navigation menu will expand to the top of the page. By pressing it again the navigation will be closing. 
+* The **Navigation bar** on large screens, when users hovering over the navigation the links should change the background colour and text colour to clearly see which menu they want to activate. By pressing any of the navigation features the site jumps to the selected section with a smooth scrolling effect by using the code `scroll-behavior: smooth;`.
+* **About me,** section users should see a brief introduction and info from the company. 
 * **F.A.Q.s** section should answer most of the questions of the users. If there are still any questions unanswered they should use the contact section to get the answer. 
 * **Contact** section users should see a form which they can fill out and receive their free quotation shortly. 
 
@@ -27,7 +27,7 @@ At the **_Mobile version_** they should see the menu button fixed on the top lef
 * About Me - A brief description of the company and from the owner.
 * F.A.Q.s - Frequently asked questions about window cleaning and the company.
 * Contact form - Allows users to fill and submit the form to request a free quotation for their windows will be cleaned.  
-* Collapsable menu at mobile version of the site. 
+* Collapsible menu at the mobile version of the site. 
 
 
 ### Features left to Implement
@@ -48,7 +48,7 @@ As my mentor, Ali mentioned I can use [Bootstrap](https://getbootstrap.com/) if 
 Every coding, styling is made by myself.
 
 ## Deployment 
-The site is hosted and published using GitHub pages and deployed from the master branch only. The publishing steps you can find [here](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). To deploy correctly the site the landing page must be named index.html. Future updated will shown automatically on the page you don't need to do anything. 
+The site is hosted and published using GitHub pages and deployed from the master branch only. The publishing steps you can find [here](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). To deploy correctly the site the landing page must be named index.html. Future updated will be shown automatically on the page you don't need to do anything. 
 
 ## Testing
 
@@ -67,7 +67,7 @@ Tested all the links on every device which I used for testing was every link wor
 * After all required fields are filled out and the form was submitted a success message appears.
 
 
-The site have the mobile first approach design. The navigation menu changes from a box on the top left corner on mobile version to a full width top fixed navigation bar on the desktop version.  
+The site has the mobile-first approach design. The navigation menu changes from a box on the top left corner on the mobile version to a full-width top fixed navigation bar on the desktop version.  
 
 
 ## Media
