@@ -44,9 +44,11 @@ At the **_Mobile version_** they should see the menu button fixed on the top lef
 
 This project was written in HTML & CSS using Cloud9 and is currently hosted on GitHub pages. 
 I used Font Awesome icons to create a nice and simple social media link section in the footer. 
-As my mentor, Ali mentioned I can use [Bootstrap](https://getbootstrap.com/) if I want it's allowed to use it, but he recommended that I 
-should do every coding by myself that's the way how you can learn and fully understanding coding. I accepted his recommendation and not used Bootstrap. 
+As my mentor, Ali mentioned I can use [Bootstrap](https://getbootstrap.com/) if I want it's allowed to use it, but he recommended that I should do every coding by myself that's the way how you can learn and fully understanding coding. I accepted his recommendation and not used Bootstrap. 
 Every coding, styling is made by myself.
+
+## Deployment 
+The site is hosted and published using GitHub pages and deployed from the master branch only. The publishing steps you can find [here](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). To deploy correctly the site the landing page must be named index.html. Future updated will shown automatically on the page you don't need to do anything. 
 
 ## Testing
 
