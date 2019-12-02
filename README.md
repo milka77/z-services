@@ -52,6 +52,7 @@ The site is hosted and published using GitHub pages and deployed from the master
 
 ## Testing
 
+Validated my [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) code was no error found.
 I was testing the site with Chrome developer tools on my desktop PC, and with my iPad mini2
 and on my iPhone SE and with multiple browsers (Safari, Chrome, Firefox, Internet Explorer) to make sure compatibility and responsiveness working.
 #### Navigation

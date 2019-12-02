@@ -70,8 +70,8 @@ input[type=checkbox] {
 .icon-menu {
     position: absolute;
     top: 28px;
-    left: 4px;
-    right: 0
+    left: 0;
+    right: 0;
     margin: auto;
     color: #fff;
     display: block;
@@ -126,19 +126,27 @@ nav li {
     color: #fafafa;
 }
 
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 .opening {
     height: 100vh;
 
     /* The background image is not the final version! */
-    background: url(../images/z_pole1.JPG) no-repeat center fixed;
+    background: url(../images/z_pole1.JPG) no-repeat center fixed;    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     /* Centering vertically and horizontally */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     /* ./Centering  */
     position: relative;
