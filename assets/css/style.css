@@ -260,7 +260,11 @@ nav li {
     padding-top: 35px;
 }
 
-.contactme span {
+.red {
+    color: #f00;
+}
+
+.free {
     font-weight: 600;
     background-color: #FFFF00;
 }
@@ -519,7 +523,7 @@ nav li {
         position: absolute;
     }
     
-    .contact-wrap span {
+    .free {
         color: #000;
     }
     

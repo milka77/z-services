@@ -72,5 +72,5 @@ The site have the mobile first approach design. The navigation menu changes from
 
 ## Media
 
-Pictures are from [Clipart Library]([http://clipart-library.com/](http://clipart-library.com/)) and [Shutterstock]([https://www.shutterstock.com/home](https://www.shutterstock.com/home)). 
+Pictures are from [Clipart Library](http://clipart-library.com/) and [Shutterstock](https://www.shutterstock.com/home). 
 The photos used in this site were obtained from Zoltan the owner of Z Services. 

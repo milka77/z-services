@@ -92,23 +92,23 @@
     <!-- Contact and Form-->
     <div class="contact-wrap" id="contact">
         <div class="contactme">
-            <h3 class="uppercase">Need a <span>free</span> quotation?</h3>
+            <h3 class="uppercase">Need a <span class="free">free</span> quotation?</h3>
             <p>Don't hesitate to contact me on phone, text message or just simply fill out the form and I will be in touch with you within the next 48 hours.
             </p>
         </div>
         <div class="contact-form">
             <form id="form" method="POST" action="#">
-                <label class="label" for="name">Name:</label>
+                <label class="label" for="name">Name: <span class="red">*</span></label>
                 <input class="forminput" type="text" name="name" id="name" placeholder="Enter your name" required><br>
-                <label class="label" for="email">Email:</label>
+                <label class="label" for="email">Email: <span class="red">*</span></label>
                 <input class="forminput" type="email" name="email" id="email" placeholder="Enter your email" required><br>
                 <label class="label" for="phone">Phone:</label>
                 <input class="forminput" type="text" name="phone" id="phone" placeholder="Enter your phone (optional)"><br>
-                <label class="label" for="housenr">House Number:</label>
+                <label class="label" for="housenr">House Number: <span class="red">*</span></label>
                 <input class="forminput" type="text" name="housenr" id="housenr" placeholder="Enter your house number" required><br>
-                <label class="label" for="postcode">Postcode:</label>
+                <label class="label" for="postcode">Postcode: <span class="red">*</span></label>
                 <input class="forminput" type="text" name="postcode" id="postcode" placeholder="Enter your postcode" required><br>
-                <label class="label" for="house">House type:</label>
+                <label class="label" for="house">House type: <span class="red">*</span></label>
                 <select class="formselect" name="house" id="house" required>
                         <option value="detached">Detached</option>
                         <option value="semi-detached">Semi-detached</option>
@@ -117,7 +117,7 @@
                         <option value="bungalow">Bungalow</option>
                         <option value="other">Other</option>
                     </select><br>
-                <label class="label" for="bedroom">Number of bedrooms:</label>
+                <label class="label" for="bedroom">Number of bedrooms: <span class="red">*</span></label>
                 <select class="formselect" name="bedroom" id="bedroom" required>
                         <option value="one">1 bedroom</option>
                         <option value="two">2 bedroom</option>
@@ -125,7 +125,7 @@
                         <option value="four">4 bedroom</option>
                         <option value="five+">5+ bedroom</option>
                 </select><br>
-                <label class="label" for="conservatory">Conservatory:</label>
+                <label class="label" for="conservatory">Conservatory: <span class="red">*</span></label>
                 <select class="formselect" name="conservatory" id="conservatory" required>    
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
