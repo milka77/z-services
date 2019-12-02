@@ -45,16 +45,21 @@
     <!-- About Me -->
     <div class="aboutme-wrap">
         <div class="aboutme" id="aboutme">
-            <div>
-                <h3 class="uppercase text-center">About Me:</h3>
+            <div class="silhouette">
+                <img src="assets/images/clipart-window-washing-49.png" alt="cleaner silhouette"></img>
             </div>
-            <div>
-                <p>My name is Zoltan. The company is located in Wigan. I'm covering Wigan and surrounding areas. For free quotation <a href="#contact">contact me.</a></p>
-                <p> I cleaned my first window 5 years ago and always used purified water-fed pole system. I always pursue to do a good job and aiming to be reliable. I keep my customers informed by sending messages about my next arrival.
-                </p>
-                <p>
-                    My service includes cleaning not only the window glasses but the frames, sills and even the front door too.
-                </p>
+            <div class="mini-wrap">
+                <div>
+                    <h3 class="uppercase text-center">About Me:</h3>
+                </div>
+                <div class="aboutme-text">
+                    <p>My name is Zoltan. The company is located in Wigan. I'm covering Wigan and surrounding areas. For free quotation <a href="#contact">contact me.</a></p>
+                    <p> I cleaned my first window 5 years ago and always used purified water-fed pole system. I always pursue to do a good job and aiming to be reliable. I keep my customers informed by sending messages about my next arrival.
+                    </p>
+                    <p>
+                        My service includes cleaning not only the window glasses but the frames, sills and even the front door too.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -93,18 +98,18 @@
         </div>
         <div class="contact-form">
             <form id="form" method="POST" action="#">
-                <label for="name">Name:</label>
+                <label class="label" for="name">Name:</label>
                 <input class="forminput" type="text" name="name" id="name" placeholder="Enter your name" required><br>
-                <label for="email">Email:</label>
+                <label class="label" for="email">Email:</label>
                 <input class="forminput" type="email" name="email" id="email" placeholder="Enter your email" required><br>
-                <label for="phone">Phone:</label>
+                <label class="label" for="phone">Phone:</label>
                 <input class="forminput" type="text" name="phone" id="phone" placeholder="Enter your phone (optional)"><br>
-                <label for="housenr">House Number:</label>
+                <label class="label" for="housenr">House Number:</label>
                 <input class="forminput" type="text" name="housenr" id="housenr" placeholder="Enter your house number" required><br>
-                <label for="postcode">Postcode:</label>
+                <label class="label" for="postcode">Postcode:</label>
                 <input class="forminput" type="text" name="postcode" id="postcode" placeholder="Enter your postcode" required><br>
-                <label for="house">House type:</label>
-                <select class="forminput" name="house" id="house" required>
+                <label class="label" for="house">House type:</label>
+                <select class="formselect" name="house" id="house" required>
                         <option value="detached">Detached</option>
                         <option value="semi-detached">Semi-detached</option>
                         <option value="terraced">Terrace</option>
@@ -112,16 +117,16 @@
                         <option value="bungalow">Bungalow</option>
                         <option value="other">Other</option>
                     </select><br>
-                <label for="bedroom">Number of bedrooms:</label>
-                <select class="forminput" name="bedroom" id="bedroom" required>
+                <label class="label" for="bedroom">Number of bedrooms:</label>
+                <select class="formselect" name="bedroom" id="bedroom" required>
                         <option value="one">1 bedroom</option>
                         <option value="two">2 bedroom</option>
                         <option value="three">3 bedroom</option>
                         <option value="four">4 bedroom</option>
                         <option value="five+">5+ bedroom</option>
                 </select><br>
-                <label for="conservatory">Conservatory:</label>
-                <select class="forminput" name="conservatory" id="conservatory" required>    
+                <label class="label" for="conservatory">Conservatory:</label>
+                <select class="formselect" name="conservatory" id="conservatory" required>    
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
                     </select>

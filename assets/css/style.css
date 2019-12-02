@@ -100,7 +100,7 @@ input[type=checkbox]:checked ~ nav ul {
 nav ul {
     list-style: none;
     background-color: rgba(0,0,0,0.9);
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     margin: 0;
     padding: 10px 0;
@@ -164,19 +164,49 @@ nav li {
 
 /* About Me ------------------------- */
 
+
+.aboutme-wrap::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
 .aboutme-wrap {
-    background-color: #e8e8e8;
+    background: url(../images/windowclean.jpg), no-repeat, bottom, fixed;
+    background-size: cover;
+    height: 75vh;
+    color: #fafafa;
+    display: flex;
+    position: relative;
+}
+
+.silhouette {
+    display: none;
 }
 
 .aboutme {
-    padding: 25px 25px 50px 25px;
+    padding: 6% 25px 50px 25px;
+    z-index: 1;
+    text-align: justify;
+}
+
+.aboutme h3 {
+    margin-bottom: 50px;
 }
 
 .aboutme a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-style: italic;
     font-weight: 600;
+}
+
+.aboutme p {
+    padding-bottom: 15px;
 }
 
 /* F.A.Q.s ------------------------- */
@@ -203,7 +233,7 @@ nav li {
 }
 
 .faqs-answer {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     text-align: justify;
 }
 
@@ -211,7 +241,7 @@ nav li {
 /* Contact Me / Form ------------------------- */
 
 .contact-wrap {
-    background-color: #e8e8e8;
+    background-color: #96b0c1;
     padding-bottom: 15px;
     padding-top: 20px;
 }
@@ -227,25 +257,40 @@ nav li {
     background-color: #FFFF00;
 }
 
+.label {
+    font-weight: 500;
+}
+
 .forminput {
     display: block;
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     border-radius: 5px;
+    width: 97%;
+    margin-top: 3px;
+    padding: 4px;
+}
+
+.formselect {
+    display: block;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 3px;
+    padding: 4px;
+}
+
+#form {
+    margin: auto;
+    margin-top: 50px;
     width: 95%;
 }
 
-.contact-form {
-    margin: auto;
-    margin-top: 50px;
-    width: 92%;
-}
-
 .btn {
-    border: 1px solid lightgray;
+    border: 1px solid #fafafa;
     width: 150px;
     height: 30px;
     border-radius: 25px;
-    background-color: #4a4a4f;
+    background-color: #d12c34;
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -259,7 +304,7 @@ nav li {
 .footer-wrap {
     padding: 20px 0 15px 0;
     margin: 0;
-    background-color: #4a4a4f;
+    background-color: #222222;
     color: #fafafa;
 }
 
@@ -312,18 +357,27 @@ nav li {
     /* About Me ------------------ */
     
     .aboutme {
-        margin-left: 11%;
-        margin-right: 11%;
+        margin: 6% 11%;
+    }
+    
+    .aboutme-wrap {
+        height: 50vh;
     }
     
     /* F.A.Q.s ------------------ */
     
     .faqs {
-       width: 80%;
+       width: 65%;
        margin-left: 10%;
        margin-right: 10%;
+       padding-right: 20%;
     } 
-
+    
+    .faqs-wrap {
+        background: url(../images/questionmark.png) no-repeat right;
+        padding-bottom: 25px;
+    }
+    
     /* Contact / Form ------------------ */
     
     .contactme {
@@ -354,10 +408,11 @@ nav li {
     
     .navigation {
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         width: 100%;
         top: 0;
         left: 0;
+        
     }
     
     nav ul {
@@ -401,11 +456,63 @@ nav li {
     .header-wrap p {
         display: inline-block;
     }
+    
+    /* About Me */
+    
+    .aboutme h3 {
+        
+    }
+    
+    .aboutme-wrap {
+        display: flex;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .aboutme {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .mini-wrap {
+        width: 65vw;
+        padding-left: 40%;
+        margin-top: 10%;
+        
+    }
+    
+    
+    .silhouette {
+        display: flex;
+        float: left;
+        position: relative;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
 
     /* Contact Me / Form --------- */
 
     .contact-wrap {
         padding-left: 12%;    
+        background: url(../images/windows02.jpg), no-repeat, center, fixed;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+    }
+    
+    .contact-wrap::before {
+        content: "";
+        background: rgba(0,0,0,0.5);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    .contact-wrap span {
+        color: #000;
     }
     
     .contactme {
@@ -413,9 +520,11 @@ nav li {
         width: 25vw;
         padding-right: 0;
         padding-left: 0;
-        padding-top: 12%;
+        padding-top: 15%;
         text-align: center;
         vertical-align: top;
+        position: relative;
+        z-index: 1;
     }
     
     .contact-form {
@@ -428,15 +537,33 @@ nav li {
     .forminput {
         font-family: "Roboto", sans-serif;
         display: block;
-        border: 1px solid lightgray;
+        border: 1px solid #d3d3d3;
         border-radius: 5px;
         width: 90%;
         line-height: 18px;
         font-size: 16px;
+        padding: 4px;
+        background-color: rgba(0,0,0,0.3);
+        color: #fafafa;
     }
     
-    .form {
-        margin: 0;
+    .formselect {
+        font-family: "Roboto", sans-serif;
+        display: block;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        width: 92%;
+        line-height: 18px;
+        font-size: 16px;
+        padding: 4px;
+        background-color: rgba(0,0,0,0.3);
+        color: #fafafa;
+    }
+    
+    #form {
+        margin: auto;
+        position: relative;
+        z-index: 1;
     }
 
     /* Footer ------------------------ */
@@ -454,14 +581,18 @@ nav li {
     }
     
     .btn {
-        margin-left: 20%;
+        margin: auto;
+        margin-top: 25px;
+        width: 35%;
+        background-color: #d12c34;
+        border: 1px solid #fafafa;
         transition: all 1s ease-in-out;
     }
     
     .btn:hover {
-        background-color: #d12c34;
-        border: 1px solid #c3d12c;
-        color: #c3d12c;
+        background-color: #fafafa;
+        border: 1px solid #d12c34;
+        color: #d12c34;
         transition: all 1s ease-in-out;
     }
 }
