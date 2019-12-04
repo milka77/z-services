@@ -96,6 +96,9 @@ input[type=checkbox]:checked ~ nav ul {
     display: block;
 }
 
+.brand {
+    display: none;
+}
 
 nav ul {
     list-style: none;
@@ -413,6 +416,13 @@ nav li {
 
     /* Navigation Bar ------------------ */
     
+    .brand {
+    display: flex;
+    float: left;
+    font-size: 170%;
+    margin-left: 50px;
+    
+    }
     
     .menu-btn {
         display: none;
@@ -431,13 +441,13 @@ nav li {
         display: inline;
         background-color: rgba(0,0,0,0.9);
         width: 100%;
-        text-align: center;
+        text-align: right;
     }
 
     nav a {
         font-size: 115%;
         display: block;
-        padding: 0 15px 0 15px;
+        padding: 0 25px 0 15px;
         transition: all 0.3s ease-in-out;
     }
 
