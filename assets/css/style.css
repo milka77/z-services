@@ -240,7 +240,7 @@ nav li {
 .faqs-question {
     font-style: italic;
     font-weight: 600;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
 }
 
 .faqs-answer {
@@ -421,6 +421,8 @@ nav li {
     float: left;
     font-size: 170%;
     margin-left: 50px;
+    z-index: 3;
+    margin-top: 12px;
     
     }
     
@@ -430,6 +432,8 @@ nav li {
     
     .navigation {
         position: fixed;
+        display: flex;
+    
         z-index: 2;
         width: 100%;
         top: 0;
@@ -443,7 +447,11 @@ nav li {
         width: 100%;
         text-align: right;
     }
-
+    
+    .nav-end {
+        margin-right: 35px;
+    }
+    
     nav a {
         font-size: 115%;
         display: block;
