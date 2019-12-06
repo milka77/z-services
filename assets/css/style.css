@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /* Basic Formats ------------------------- */
@@ -87,7 +89,7 @@ input[type=checkbox] {
     font-size: 13px;
     text-align: center;
     cursor: pointer;
-    z-index: 3;
+    z-index: 4;
     background-color: rgba(0,0,0,0.4);
     border-radius: 3px;
 }
@@ -103,7 +105,7 @@ input[type=checkbox]:checked ~ nav ul {
 nav ul {
     list-style: none;
     background-color: rgba(0,0,0,0.9);
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     margin: 0;
     padding: 10px 0;
@@ -135,10 +137,7 @@ nav li {
     height: 100vh;
 
     /* The background image is not the final version! */
-    background: url(../images/z_pole1.JPG) no-repeat center fixed;    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url(../images/z_pole1.JPG) no-repeat center fixed;
     background-size: cover;
     /* Centering vertically and horizontally */
     display: -webkit-box;
@@ -191,6 +190,8 @@ nav li {
     background-size: cover;
     height: 100%;
     color: #fafafa;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 }
@@ -199,9 +200,16 @@ nav li {
     display: none;
 }
 
+.ab-header {
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    margin-top: 25px;
+}
+
 .aboutme {
-    padding: 6% 25px 50px 25px;
-    z-index: 1;
+    z-index: 2;
+    margin: 140px 5% 25px 5%;
     text-align: justify;
 }
 
@@ -229,7 +237,7 @@ nav li {
 }
 
 .faqs-wrap {
-    padding-top: 25px;
+    padding-top: 50px;
 }
 
 .faqs ul {
@@ -372,11 +380,8 @@ nav li {
     /* About Me ------------------ */
     
     .aboutme {
-        margin: 6% 11%;
-    }
-    
-    .aboutme-wrap {
-        height: 55vh;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     
     /* F.A.Q.s ------------------ */
@@ -417,13 +422,14 @@ nav li {
     /* Navigation Bar ------------------ */
     
     .brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     float: left;
     font-size: 170%;
     margin-left: 50px;
     z-index: 3;
     margin-top: 12px;
-    
     }
     
     .menu-btn {
@@ -432,13 +438,14 @@ nav li {
     
     .navigation {
         position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     
         z-index: 2;
         width: 100%;
         top: 0;
         left: 0;
-        
     }
     
     nav ul {
@@ -456,6 +463,8 @@ nav li {
         font-size: 115%;
         display: block;
         padding: 0 25px 0 15px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
 
@@ -472,6 +481,8 @@ nav li {
         background-color: #fafafa;
         color: #4a4a4f;
         border-radius: 5px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
 
@@ -489,11 +500,9 @@ nav li {
     
     /* About Me */
     
-    .aboutme h3 {
-        
-    }
-    
     .aboutme-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 500px;
         width: 100%;
@@ -501,25 +510,31 @@ nav li {
         margin-right: auto;
     }
     
+    .ab-header {
+        margin-top: 35px;
+    }
+    
     .aboutme {
         margin: 0;
         padding: 0;
     }
     
-    .mini-wrap {
+    .aboutme-text {
         width: 65vw;
         padding-left: 40%;
-        margin-top: 10%;
-        
+        margin-top: 18%;
+        position: relative;
     }
     
     
     .silhouette {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         float: left;
         position: relative;
         padding-top: 5%;
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     /* Contact Me / Form --------- */
@@ -570,7 +585,7 @@ nav li {
         display: block;
         border: 1px solid #d3d3d3;
         border-radius: 5px;
-        width: 90%;
+        width: 91%;
         line-height: 18px;
         font-size: 16px;
         padding: 4px;
@@ -617,6 +632,8 @@ nav li {
         width: 35%;
         background-color: #d12c34;
         border: 1px solid #fafafa;
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
     }
     
@@ -624,6 +641,8 @@ nav li {
         background-color: #fafafa;
         border: 1px solid #d12c34;
         color: #d12c34;
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
         transition: all 1s ease-in-out;
     }
 }

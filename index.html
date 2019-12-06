@@ -44,23 +44,21 @@
     </div>
     <!-- ./ The Opening page -->
     <!-- About Me -->
-    <div class="aboutme-wrap">
-        <div class="aboutme" id="aboutme">
+    <div class="aboutme-wrap" id="aboutme">
+        <div class="ab-header">
+            <h3 class="uppercase text-center">About Me:</h3>
+        </div>
+        <div class="aboutme">
             <div class="silhouette">
                 <img src="assets/images/clipart-window-washing-49.png" alt="cleaner silhouette">
             </div>
-            <div class="mini-wrap">
-                <div>
-                    <h3 class="uppercase text-center">About Me:</h3>
-                </div>
-                <div class="aboutme-text">
-                    <p>My name is Zoltan. The company is located in Wigan. I'm covering Wigan and surrounding areas. For free quotation <a href="#contact">contact me.</a></p>
-                    <p> I cleaned my first window 5 years ago and always used purified water-fed pole system. I always pursue to do a good job and aiming to be reliable. I keep my customers informed by sending messages about my next arrival.
-                    </p>
-                    <p>
-                        My service includes cleaning not only the window glasses but the frames, sills and even the front door too.
-                    </p>
-                </div>
+            <div class="aboutme-text">
+                <p>My name is Zoltan. The company is located in Wigan. I'm covering Wigan and surrounding areas. For free quotation <a href="#contact">contact me.</a></p>
+                <p> I cleaned my first window 5 years ago and always used purified water-fed pole system. I always pursue to do a good job and aiming to be reliable. I keep my customers informed by sending messages about my next arrival.
+                </p>
+                <p>
+                    My service includes cleaning not only the window glasses but the frames, sills and even the front door too.
+                </p>
             </div>
         </div>
     </div>
@@ -109,6 +107,7 @@
                 <input class="forminput" type="text" name="postcode" id="postcode" placeholder="Enter your postcode" required><br>
                 <label class="label" for="house">House type: <span class="red">*</span></label>
                 <select class="formselect" name="house" id="house" required>
+                        <option value="" selected>Please select an option</option>
                         <option value="detached">Detached</option>
                         <option value="semi-detached">Semi-detached</option>
                         <option value="terraced">Terrace</option>
@@ -118,6 +117,7 @@
                     </select><br>
                 <label class="label" for="bedroom">Number of bedrooms: <span class="red">*</span></label>
                 <select class="formselect" name="bedroom" id="bedroom" required>
+                        <option value="" selected>Please select an option</option>
                         <option value="one">1 bedroom</option>
                         <option value="two">2 bedroom</option>
                         <option value="three">3 bedroom</option>
@@ -126,6 +126,7 @@
                 </select><br>
                 <label class="label" for="conservatory">Conservatory: <span class="red">*</span></label>
                 <select class="formselect" name="conservatory" id="conservatory" required>    
+                        <option value="" selected>Please select an option</option>
                         <option value="no">No</option>
                         <option value="yes">Yes</option>
                     </select>

@@ -41,6 +41,7 @@ At the **_Mobile version_,** they should see the menu button fixed on the top le
 * [Font Awesome](https://fontawesome.com/ "Font Awesome Homepage") 
 * [Google Fonts](https://fonts.google.com/ "Google Fonts Homepage")
 * Favicon generator [favico.io](https://favicon.io/favicon-generator/)
+* [Autoprefixer CSS online](https://autoprefixer.github.io/)
 
 This project was written in HTML & CSS using Cloud9 and is currently hosted on GitHub pages. 
 I used Font Awesome icons to create a nice and simple social media link section in the footer. 
